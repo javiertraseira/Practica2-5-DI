@@ -4,7 +4,7 @@
 
 Crea un generador de números aleatorios gráfico. Utiliza el elemento *JSpinner* (contadores) que mostrará el número aleatorio generado entre esos dos números en un campo *JTextField* al pulsar el botón generar.
 
-La ventana deberá tener además un menú con los elementos Fichero y Edición. El menú fichero deberá tener un elemento salir y el menú *Edición* un elemento que permita borrar el contenido de los campos de la ventana.
+La ventana deberá tener además un **menú** con los elementos Fichero y Edición. El menú fichero deberá tener un elemento salir y el menú *Edición* un elemento que permita borrar el contenido de los campos de la ventana.
 
 Ayúdate de la función `Math.random()` entre dos números y de una **clase auxiliar** para realizar dichos cálculos.
 
