@@ -23,3 +23,8 @@ Agrega en el *menú edición* un elemento llamado **historial** que permita ver 
 
 Agrega en el *menú fichero* una opción para **guardar** el historial del listado generado en un fichero de texto. Se deberá verificar si ya existe un fichero con el mismo nombre antes de sobreescribirlo.
  
+## Parte 3 (opcional)
+
+En vez de en una ventana modal crea una nueva ventana para mostrar el historial (*JFrame*) usando una lista (*JList*) para mostrar el historial.
+
+
