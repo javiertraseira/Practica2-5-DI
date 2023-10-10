@@ -8,6 +8,10 @@ La ventana deberá tener además un **menú** con los elementos Fichero y Edici�
 
 Ayúdate de la función `Math.random()` entre dos números y de una **clase auxiliar** para realizar dichos cálculos.
 
+```java
+Math.floor(Math.random() * (max - min + 1) + (min)
+```
+
 ![](media/ba18dcfdd7fd2df3ed8dfe1cefa04f24.png)
 
 
