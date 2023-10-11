@@ -6,10 +6,16 @@ Crea un generador de números aleatorios gráfico. Utiliza el elemento *JSpinner
 
 La ventana deberá tener además un **menú** con los elementos Fichero y Edición. El menú fichero deberá tener un elemento salir y el menú *Edición* un elemento que permita reiniciar el contenido de los campos de la ventana.
 
-Ayúdate de la función `Math.random()` entre dos números y de una **clase auxiliar** para realizar dichos cálculos.
+Ayúdate de la función `Math.random()` entre dos números o de la clase `radom` así como de una **clase auxiliar** para realizar dichos cálculos.
 
 ```java
 Math.random() * (max - min + 1) + (min)
+```
+
+```java
+Random rnd = new Random();
+rnd.nextDouble() * max + min
+
 ```
 
 > Nota: No olvides en tus proyectos agregar los ficheros **jar** precompilados.
