@@ -22,7 +22,7 @@ Math.random() * (max - min + 1) + (min)
 
 Mejora el ejercicio anterior agregando un *checkbox* que en caso de estar marcado solo permita mostrar números **primos** entre los valores requeridos.
 
-Agrega en el *menú edición* un elemento llamado **historial** que permita ver los últimos números generados en una ventana modal (*JDialog*) usando una lista (*JList*). Agrega también una opción que permita reinicializar los elementos en pantalla.
+Agrega en el *menú edición* un elemento llamado **historial** que permita ver los últimos números generados en una ventana modal (*JDialog*) usando una lista (*JList*). Agrega también una opción que permita reinicializar los elementos en pantalla. Opcionalmente borrar también el listado del historial.
 
 Agrega en el *menú fichero* una opción para **guardar** el historial del listado generado en un fichero de texto. Se deberá verificar si ya existe un fichero con el mismo nombre antes de sobreescribirlo.
  
