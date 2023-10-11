@@ -11,9 +11,9 @@ Ayúdate de la función `Math.random()` entre dos números y de una **clase auxi
 ```java
 Math.random() * (max - min + 1) + (min)
 ```
-```note
-Nota: No olvides en tus proyectos agregar los ficheros **jar** en el proyecto
-```
+
+> Nota: No olvides en tus proyectos agregar los ficheros **jar** en el proyecto
+
 
 ![](media/ba18dcfdd7fd2df3ed8dfe1cefa04f24.png)
 
