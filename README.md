@@ -28,13 +28,15 @@ rnd.nextDouble() * max + min
 
 Mejora el ejercicio anterior agregando un *checkbox* que en caso de estar marcado solo permita mostrar números **primos** entre los valores requeridos.
 
-Agrega en el *menú edición* un elemento llamado **historial** que permita ver los últimos números generados en una ventana modal (*JDialog*) usando una lista (*JList*). Opcionalmente agregar una opción *llamada borrar* todo para eliminar el listado guardado del historial.
+Agrega en el *menú edición* un elemento llamado **historial** que permita ver los últimos números generados en una ventana modal (*JDialog*) usando una lista (*JList*). 
 
 Agrega en el *menú fichero* una opción para **guardar** el historial del listado generado en un fichero de texto. Se deberá verificar si ya existe un fichero con el mismo nombre antes de sobreescribirlo.
  
-## Parte 3  (opcional)
+## Parte 3   
 
-Agrega dos **pestañas** (*JTabbedPane*), una en la que se muestren los números primos anteriores y otra en la que se pueda cargar una imagen haciendo *drag and drop*.
+Agrega dos **pestañas** (*JTabbedPane*), una en la que se muestren los números primos anteriores y otra en la que se pueda cargar una imagen haciendo click sobre un JLabel.
+
+Opcionalmente agregar una opción en el *menú edición* *llamada borrar todo* para eliminar el listado guardado del historial.
 
 
 
