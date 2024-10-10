@@ -26,6 +26,8 @@ En esta práctica deberás además de empaquetar en un fichero **jar** el ejerci
 
 ## Parte 2
 
+Divide el proyecto en dos paquetes diferenciados según su función: *VistaControlador* y *Modelo*
+
 Mejora el ejercicio anterior agregando un *checkbox* que en caso de estar marcado solo permita mostrar números **primos** entre los valores requeridos.
 
 Agrega en el *menú edición* un elemento llamado **historial** que permita ver los últimos números generados en una ventana modal (*JDialog*) usando una lista (*JList*). 
@@ -46,8 +48,9 @@ Crea el fichero de pruebas en la carpeta *TEST* del repositorio en un fichero ll
 | 04             | Comprobación del historial                     | Abrir ventana desde el menú edición > historial | Se muestra un historial de todos los valores mostrados en una lista JList | OK/No cumple|
 | 05             | Comprobación guardado                          | Abrir desde el menú fichero > guardar   | Se muestra un JFileChooser para elegir dónde guardar un fichero con el historial de números generados | OK/No cumple|
 | 06             | Comprobación duplicados                        | Abrir desde el menú fichero > guardar   | Se verifica que el fichero a guardar no exista ya, en cuyo caso pregunta si se desea sobrescribir | OK/No cumple|
-| 07             | Comprobación fichero jar                        | Proyecto a empaquetar   | Se genera y prueba el fichero jar empaquetado | OK/No cumple|
-| 08             | Creación de branches                        | Parte 1 y parte 2   | Se crean al menos dos branches en el repositorio github | OK/No cumple|
+| 07             | Estructura de proyecto                        | -   | División del proyecto en paquetes | OK/No cumple|
+| 08             | Comprobación fichero jar                        | Proyecto a empaquetar   | Se genera y prueba el fichero jar empaquetado | OK/No cumple|
+| 09             | Creación de branches                        | Parte 1 y parte 2   | Se crean al menos dos branches en el repositorio github | OK/No cumple|
  
 ## Parte 3 (opcional)
 
