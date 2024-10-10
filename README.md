@@ -36,6 +36,8 @@ Agrega en el *menú fichero* una opción para **guardar** el historial del lista
 
 ## Pruebas (testing)
 
+Crea el fichero de pruebas en la carpeta *TEST* del repositorio en un fichero llamado *resultado_pruebas.md*.
+
 | ID Caso Prueba | Descripción Caso de Prueba                     | Entrada                                 | Salida Esperada                                                           | Resultado   |
 |----------------|-----------------------------------------------|-----------------------------------------|---------------------------------------------------------------------------|-------------|
 | 01             | Comprobación del botón "Generar"               | Escribir valores en mínimo y máximo     | Se genera un número aleatorio entre los valores indicados                  | OK/No cumple|
