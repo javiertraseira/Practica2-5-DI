@@ -1,8 +1,10 @@
 # Práctica 2.5 Generador de números aleatorios
 
+Crea un proyecto llamado *practica2-5* en la carpeta SOL de github. Utiliza *branches* para delimitar los cambios que vayas haciendo.
+
 ## Parte 1
 
-Crea un generador de números aleatorios gráfico. Utiliza el elemento *JSpinner* (contadores) que mostrará el número aleatorio generado entre esos dos números en un campo *JTextField* al pulsar el botón generar.
+Crea un generador de números aleatorios gráfico. Utiliza el elemento *JSpinner* que mostrará el número aleatorio generado entre esos dos números en un campo *JTextField* al pulsar el botón generar.
 
 La ventana deberá tener además un **menú** con los elementos Fichero y Edición. El menú fichero deberá tener un elemento salir y el menú *Edición* un elemento que permita reiniciar el contenido de los campos de la ventana.
 
@@ -18,11 +20,9 @@ rnd.nextDouble() * max + min
 
 ```
 
-> Nota: No olvides en tus proyectos agregar los ficheros **jar** precompilados.
-
+En esta práctica deberás además de empaquetar en un fichero **jar** el ejercicio
 
 ![](media/ba18dcfdd7fd2df3ed8dfe1cefa04f24.png)
-
 
 ## Parte 2
 
@@ -31,6 +31,8 @@ Mejora el ejercicio anterior agregando un *checkbox* que en caso de estar marcad
 Agrega en el *menú edición* un elemento llamado **historial** que permita ver los últimos números generados en una ventana modal (*JDialog*) usando una lista (*JList*). 
 
 Agrega en el *menú fichero* una opción para **guardar** el historial del listado generado en un fichero de texto mediante un *JFileChooser*. Se deberá verificar si ya existe un fichero con el mismo nombre antes de sobreescribirlo.
+
+> Nota: No olvides en tu proyecto agregar el fichero **jar** precompilado.
 
 ## Pruebas (testing)
 
@@ -42,6 +44,8 @@ Agrega en el *menú fichero* una opción para **guardar** el historial del lista
 | 04             | Comprobación del historial                     | Abrir ventana desde el menú edición > historial | Se muestra un historial de todos los valores mostrados en una lista JList | OK/No cumple|
 | 05             | Comprobación guardado                          | Abrir desde el menú fichero > guardar   | Se muestra un JFileChooser para elegir dónde guardar un fichero con el historial de números generados | OK/No cumple|
 | 06             | Comprobación duplicados                        | Abrir desde el menú fichero > guardar   | Se verifica que el fichero a guardar no exista ya, en cuyo caso pregunta si se desea sobrescribir | OK/No cumple|
+| 07             | Comprobación fichero jar                        | Proyecto a empaquetar   | Se genera y prueba el fichero jar empaquetado | OK/No cumple|
+| 08             | Creación de branches                        | Parte 1 y parte 2   | Se crean al menos dos branches en el repositorio github | OK/No cumple|
  
 ## Parte 3 (opcional)
 
