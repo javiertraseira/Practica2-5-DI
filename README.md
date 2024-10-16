@@ -30,9 +30,11 @@ Divide el proyecto en dos paquetes diferenciados según su función: *VistaContr
 
 Mejora el ejercicio anterior agregando un *checkbox* que en caso de estar marcado solo permita mostrar números **primos** entre los valores requeridos.
 
-Agrega en el *menú edición* un elemento llamado **historial** que permita ver los últimos números generados en una ventana modal (*JDialog*) usando una lista (*JList*). 
+Agrega en el *menú edición* los siguentes elementos: 
 
-Agrega en el *menú fichero* una opción para **guardar** el historial del listado generado en un fichero de texto mediante un *JFileChooser*. Se deberá verificar si ya existe un fichero con el mismo nombre antes de sobreescribirlo.
+- Una opción llamada **historial** que permita ver los últimos números generados en una ventana modal (*JDialog*) usando una lista (*JList*). 
+- Una opción para **guardar** el historial del listado generado en un fichero de texto mediante un *JFileChooser*. Se deberá verificar si ya existe un fichero con el mismo nombre antes de sobreescribirlo.
+- Otra última opción llamada *borrar todo* para eliminar el listado guardado del historial.  
 
 > Nota: No olvides en tu proyecto agregar el fichero **jar** precompilado.
 
@@ -56,7 +58,6 @@ Crea el fichero de pruebas en la carpeta *TEST* del repositorio en un fichero ll
 
 Agrega dos **pestañas** (*JTabbedPane*), una en la que se muestren los números primos anteriores y otra en la que se pueda cargar una imagen haciendo click sobre un JLabel.
 
-Opcionalmente agregar una opción en el *menú edición* *llamada borrar todo* para eliminar el listado guardado del historial.
 
 
 
