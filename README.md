@@ -28,15 +28,13 @@ En esta práctica deberás además de empaquetar en un fichero `jar` el resultad
 
 ## Parte 2
 
-Divide el proyecto en dos paquetes diferenciados según su función: *VistaControlador* y *Modelo*
+Divide el proyecto en dos paquetes diferenciados según su función: `VistaControlador` y `Modelo`
+- Mejora el ejercicio anterior agregando un *checkbox* que en caso de estar marcado solo permita mostrar números **primos** entre los valores requeridos.
+- Agrega en el *menú edición* los siguentes elementos: 
 
-Mejora el ejercicio anterior agregando un *checkbox* que en caso de estar marcado solo permita mostrar números **primos** entre los valores requeridos.
-
-Agrega en el *menú edición* los siguentes elementos: 
-
-- Una opción llamada **historial** que permita ver los últimos números generados en una ventana modal (*JDialog*) usando una lista (*JList*). 
-- Una opción para **guardar** el historial del listado generado en un fichero de texto mediante un *JFileChooser*. Se deberá verificar si ya existe un fichero con el mismo nombre antes de sobreescribirlo.
-- Otra última opción llamada *borrar todo* para eliminar el listado guardado del historial.  
+    - Una opción llamada **historial** que permita ver los últimos números generados en una ventana modal (*JDialog*) usando una lista (*JList*). 
+    - Una opción para **guardar** el historial del listado generado en un fichero de texto mediante un *JFileChooser*. Se deberá verificar si ya existe un fichero con el mismo nombre antes de sobreescribirlo.
+    - Otra última opción llamada *borrar todo* para eliminar el listado guardado del historial.  
 
 > Nota: No olvides en tu proyecto agregar el fichero **jar** precompilado.
 
