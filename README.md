@@ -1,5 +1,7 @@
 # Práctica 2.5 Generador de números aleatorios
 
+El objetivo de esta práctica es la de diseñar y desarrollar una aplicación gráfica que permita generar números aleatorios dentro de un rango definido por el usuario, aplicando los principios de separación de lógica en paquetes (Modelo y VistaControlador) y buenas prácticas de organización en proyectos Java.
+
 Crea un proyecto llamado *practica2-5* en la carpeta SOL de github. Utiliza *branches* para delimitar los cambios que vayas haciendo.
 
 ## Parte 1
