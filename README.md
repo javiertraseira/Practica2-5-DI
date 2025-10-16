@@ -90,17 +90,19 @@ public class GeneradorNumerosTest {
 
     private FrameFixture ventana;
 
-    @BeforeAll
-    static void setUpOnce() {
-        // Verifica que las pruebas se ejecutan en el hilo correcto
+   @Before
+    public void setUp() {
+        // Comprobar que las acciones Swing se hacen en el hilo correcto
         FailOnThreadViolationRepaintManager.install();
-    }
 
-    @BeforeEach
-    void setUp() {
-        // Inicia la ventana principal
-        ventana = new FrameFixture(new VentanaPrincipal());
-        ventana.show(); // muestra la interfaz para probarla
+        // Inicializar la ventana de prueba en el EDT
+        GeneraNumeros frame = GuiActionRunner.execute(() -> new GeneraNumeros()); // <-- Creación segura de la instancia
+        
+        // Inicializar el FrameFixture
+        ventana = new FrameFixture(frame); 
+        
+        // Mostrar la ventana en el EDT
+        ventana.show(); 
     }
 
     @AfterEach
