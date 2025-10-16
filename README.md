@@ -22,7 +22,7 @@ rnd.nextDouble() * max + min
 
 ```
 
-En esta práctica deberás además de empaquetar en un fichero `jar` el resultado del ejercicio.
+Verifica dónde se crea el fichero de empaquetado del proyecto `jar` al contruir el proyecto y ejecútalo desde la consola usando los comandos adecuados.
 
 ![](media/ba18dcfdd7fd2df3ed8dfe1cefa04f24.png)
 
@@ -36,7 +36,7 @@ Divide el proyecto en dos paquetes diferenciados según su función: `VistaContr
     - Una opción para **guardar** el historial del listado generado en un fichero de texto mediante un *JFileChooser*. Se deberá verificar si ya existe un fichero con el mismo nombre antes de sobreescribirlo.
     - Otra última opción llamada *borrar todo* para eliminar el listado guardado del historial.  
 
-> Nota: No olvides en tu proyecto agregar el fichero **jar** precompilado.
+- Busca la forma de forzar la creación del .jar al compilar (no solo al construir el proyecto).
 
 ## Pruebas (testing)
 
