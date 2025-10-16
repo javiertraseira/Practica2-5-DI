@@ -63,7 +63,8 @@ Amplía tu proyecto implementando una **prueba automatizada** de interfaz gráfi
 
 El objetivo es comprobar de forma programática que el generador de números aleatorios funciona correctamente cuando el usuario introduce valores en los campos JSpinner y pulsa el botón “Generar”.
 
-1. Asegúrate de incluir AssertJ Swing en tu proyecto editando el fichero `pom.xml`.
+1. Asegúrate de incluir las dependencias de *AssertJ Swing* y *JUnit 4* en tu proyecto editando el fichero `pom.xml`.
+
 2. Asegúrate de que los elementos que vayas a tester tengan identificadores (names) asignados a los componentes que vayas a testear.
 
 ```java
@@ -73,7 +74,7 @@ botonGenerar.setName("botonGenerar");
 campoResultado.setName("campoResultado");
 ```
 
-3. Debes de crear una **clase de prueba** desde *Test Packages>new Java Class*
+3. Debes crear en el paquete de VistaControaldor una nueva **clase de prueba** en *Test Packages>new Java Class*
 
 4. Código de prueba propuesto:
 
