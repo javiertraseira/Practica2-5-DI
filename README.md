@@ -6,9 +6,9 @@ Crea un proyecto llamado *practica2-5* en la carpeta SOL de github. Utiliza *bra
 
 ## Parte 1
 
-Crea un generador de números aleatorios gráfico. Utiliza el elemento *JSpinner* que mostrará el número aleatorio generado entre esos dos números en un campo *JTextField* al pulsar el botón generar.
+Crear una interfaz mixta utilizando *FlatLaf* con los elementos indicados para un generador de números aleatorios gráfico. Utiliza el elemento *JSpinner* que mostrará el número aleatorio generado entre esos dos números en un campo *JTextField* al pulsar el botón generar.
 
-La ventana deberá tener además un **menú** con los elementos Fichero y Edición. El menú fichero deberá tener un elemento salir y el menú *Edición* un elemento que permita reiniciar el contenido de los campos de la ventana.
+La ventana deberá tener además un **menú** con los elementos Fichero y Edición. El menú fichero deberá tener por el momento un elemento salir y el menú *Edición* un elemento que permita reiniciar el contenido de los campos de la ventana.
 
 Ayúdate de la función `Math.random()` entre dos números o de la clase `radom` así como de una **clase auxiliar** para realizar dichos cálculos.
 
@@ -22,7 +22,7 @@ rnd.nextDouble() * max + min
 
 ```
 
-En esta práctica deberás además de empaquetar en un fichero **jar** el ejercicio
+En esta práctica deberás además de empaquetar en un fichero `jar` el resultado del ejercicio.
 
 ![](media/ba18dcfdd7fd2df3ed8dfe1cefa04f24.png)
 
