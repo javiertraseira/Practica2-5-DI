@@ -32,7 +32,7 @@ Divide el proyecto en dos paquetes diferenciados según su función: `VistaContr
 - Mejora el ejercicio anterior agregando un *checkbox* que en caso de estar marcado solo permita mostrar números **primos** entre los valores requeridos.
 - Agrega en el *menú edición* los siguentes elementos: 
 
-    - Una opción llamada **historial** que permita ver los últimos números generados en una ventana modal (*JDialog*) usando una lista (*JList*). 
+    - Una opción llamada **historial** que permita ver los últimos números generados en una ventana modal (*JDialog*) usando una lista (*JList*). Puedes editar la disposición de dicha ventana de diálogo desde el editor en la pestaña del *Navigator* en Other Components. 
     - Una opción para **guardar** el historial del listado generado en un fichero de texto mediante un *JFileChooser*. Se deberá verificar si ya existe un fichero con el mismo nombre antes de sobreescribirlo.
     - Otra última opción llamada *borrar todo* para eliminar el listado guardado del historial.  
 
