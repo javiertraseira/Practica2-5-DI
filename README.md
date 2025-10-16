@@ -112,7 +112,7 @@ public class GeneradorNumerosTest {
     }
 
     @Test
-    void deberiaGenerarNumeroAleatorioEntreValoresSpinner() {
+    public void deberiaGenerarNumeroAleatorioEntreValoresSpinner() {
         // Introduce los valores en los spinners
         ventana.spinner("spinnerMin").enterText("5");
         ventana.spinner("spinnerMax").enterText("10");
