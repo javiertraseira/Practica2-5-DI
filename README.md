@@ -57,7 +57,7 @@ Crea el fichero de pruebas en la carpeta *TEST* del repositorio en un fichero ll
 | 11             | Comprobación de opción “Borrar todo” | Seleccionar “Borrar todo” en el menú Edición | Se elimina el historial mostrado y/o guardado | OK/No cumple |
 
  
-## Parte 3 (opcional)
+## Parte 3 
 
 Amplía tu proyecto implementando una **prueba automatizada** de interfaz gráfica (GUI test) utilizando la librería *AssertJ Swing*.
 
@@ -129,7 +129,7 @@ public class GeneradorNumerosTest {
 }
 ```
 
-
+5. Agrega dicho caso automatizado a la tabla de pruebas anterior.
 
 
 
