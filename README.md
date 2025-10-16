@@ -1,6 +1,6 @@
 # Práctica 2.5 Generador de números aleatorios
 
-El objetivo de esta práctica es la de diseñar y desarrollar una aplicación gráfica que permita generar números aleatorios dentro de un rango definido por el usuario, aplicando los principios de separación de lógica en paquetes (Modelo y VistaControlador) y buenas prácticas de organización en proyectos Java.
+El objetivo de esta práctica es la de diseñar y desarrollar una aplicación gráfica que permita generar números aleatorios dentro de un rango definido por el usuario, aplicando los principios de separación de lógica en paquetes (Modelo y VistaControlador) y buenas prácticas de organización en proyectos Java. Además se aprenderá a crear pruebas automatizadas para testear apartados de la interfaz.
 
 Crea un proyecto llamado *practica2-5* en la carpeta SOL de github. Utiliza *branches* para delimitar los cambios que vayas haciendo.
 
@@ -61,7 +61,76 @@ Crea el fichero de pruebas en la carpeta *TEST* del repositorio en un fichero ll
  
 ## Parte 3 (opcional)
 
-Agrega dos **pestañas** (*JTabbedPane*), una en la que se muestren los números primos anteriores y otra en la que se pueda cargar una imagen haciendo click sobre un JLabel.
+Amplía tu proyecto implementando una **prueba automatizada** de interfaz gráfica (GUI test) utilizando la librería *AssertJ Swing*.
+
+El objetivo es comprobar de forma programática que el generador de números aleatorios funciona correctamente cuando el usuario introduce valores en los campos JSpinner y pulsa el botón “Generar”.
+
+1. Asegúrate de incluir AssertJ Swing en tu proyecto editando el fichero `pom.xml`.
+2. Asegúrate de que los elementos que vayas a tester tengan identificadores (names) asignados a los componentes que vayas a testear.
+
+```java
+spinnerMin.setName("spinnerMin");
+spinnerMax.setName("spinnerMax");
+botonGenerar.setName("botonGenerar");
+campoResultado.setName("campoResultado");
+```
+
+3. Debes de crear una **clase de prueba** desde *Test Packages>new Java Class*
+
+4. Código de prueba propuesto:
+
+```java
+import static org.assertj.core.api.Assertions.assertThat;
+
+import org.assertj.swing.annotation.GUITest;
+import org.assertj.swing.edt.FailOnThreadViolationRepaintManager;
+import org.assertj.swing.fixture.FrameFixture;
+import org.junit.jupiter.api.*;
+
+public class GeneradorNumerosTest {
+
+    private FrameFixture ventana;
+
+    @BeforeAll
+    static void setUpOnce() {
+        // Verifica que las pruebas se ejecutan en el hilo correcto
+        FailOnThreadViolationRepaintManager.install();
+    }
+
+    @BeforeEach
+    void setUp() {
+        // Inicia la ventana principal
+        ventana = new FrameFixture(new VentanaPrincipal());
+        ventana.show(); // muestra la interfaz para probarla
+    }
+
+    @AfterEach
+    void tearDown() {
+        ventana.cleanUp();
+    }
+
+    @Test
+    @GUITest
+    void deberiaGenerarNumeroAleatorioEntreValoresSpinner() {
+        // Introduce los valores en los spinners
+        ventana.spinner("spinnerMin").enterText("5");
+        ventana.spinner("spinnerMax").enterText("10");
+
+        // Pulsa el botón "Generar"
+        ventana.button("botonGenerar").click();
+
+        // Obtiene el resultado mostrado en el JTextField
+        String textoResultado = ventana.textBox("campoResultado").text();
+
+        // Convierte el resultado a número y comprueba el rango
+        int valor = Integer.parseInt(textoResultado);
+        assertThat(valor)
+            .as("El número generado debe estar entre 5 y 10")
+            .isBetween(5, 10);
+    }
+}
+```
+
 
 
 
