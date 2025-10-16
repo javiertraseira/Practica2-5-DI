@@ -105,13 +105,13 @@ public class GeneradorNumerosTest {
         ventana.show(); 
     }
 
-    @AfterEach
+    @After
     void tearDown() {
+        // Cierra la ventana después de cada prueba
         ventana.cleanUp();
     }
 
     @Test
-    @GUITest
     void deberiaGenerarNumeroAleatorioEntreValoresSpinner() {
         // Introduce los valores en los spinners
         ventana.spinner("spinnerMin").enterText("5");
@@ -132,7 +132,9 @@ public class GeneradorNumerosTest {
 }
 ```
 
-5. Agrega dicho caso automatizado a la tabla de pruebas anterior.
+5. Para ejecutar la prueba haz clic sobre la clase y en el menú contextual en *Test File*
+
+6. Agrega dicho caso automatizado a la tabla de pruebas anterior.
 
 
 
