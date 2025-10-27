@@ -50,7 +50,7 @@ Crea el fichero de pruebas en la carpeta *TEST* del repositorio en un fichero ll
 | 04             | Comprobación del historial                     | Abrir ventana desde el menú edición > historial | Se muestra un historial de todos los valores mostrados en una lista `JList` | OK/No cumple|
 | 05             | Comprobación guardado                          | Abrir desde el menú fichero > guardar   | Se muestra un `JFileChooser` para elegir dónde guardar un fichero con el historial de números generados | OK/No cumple|
 | 06             | Comprobación duplicados                        | Abrir desde el menú fichero > guardar   | Se verifica que el fichero a guardar no exista ya, en cuyo caso pregunta si se desea sobrescribir | OK/No cumple|
-| 07             | Estructura de proyecto                        | -   | División del proyecto en paquetes | OK/No cumple|
+| 07             | Estructura de proyecto                        | -   | División del proyecto en paquetes del MVC | OK/No cumple|
 | 08             | Comprobación fichero `jar`                        | Proyecto a empaquetar   | Se genera y prueba el fichero `jar` empaquetado | OK/No cumple|
 | 09             | Creación de branches                        | Parte 1 y parte 2   | Se crean al menos dos branches en el repositorio github | OK/No cumple|
 | 10             | Comprobación del botón “Reiniciar” en el menú Edición | Seleccionar “Reiniciar” en el menú | Se vacían los campos y se restablece el estado inicial de la ventana | OK/No cumple |
