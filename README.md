@@ -74,7 +74,7 @@ botonGenerar.setName("botonGenerar");
 campoResultado.setName("campoResultado");
 ```
 
-3. Debes crear en el paquete de VistaControaldor una nueva **clase de prueba** en *Test Packages>new Java Class*
+3. Debes crear en el paquete de VistaControaldor una nueva **clase de prueba** en *Test Packages>new Java Class* que se llame como la clase principal del *JFrame()* acabada en Test.
 
 4. Código de prueba propuesto:
 
